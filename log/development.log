@@ -14831,3 +14831,69 @@ Served asset /sorter.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-11 10:54:56 -0600
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-14 16:30:46 -0700
+Processing by SorterController#index as HTML
+  Rendered sorter/index.html.erb within layouts/application (1.7ms)
+Compiled jquery.js  (3ms)  (pid 20820)
+Compiled jquery_ujs.js  (0ms)  (pid 20820)
+Compiled application.js  (43ms)  (pid 20820)
+Completed 200 OK in 66ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-14 16:30:46 -0700
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/sorter.css?body=1" for 127.0.0.1 at 2013-04-14 16:30:46 -0700
+Served asset /sorter.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-14 16:30:46 -0700
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-14 16:30:46 -0700
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/sorter.js?body=1" for 127.0.0.1 at 2013-04-14 16:30:46 -0700
+Served asset /sorter.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-14 16:30:46 -0700
+Served asset /application.js - 200 OK (34ms)
+
+
+Started GET "/sorter/sort" for 127.0.0.1 at 2013-04-14 16:30:49 -0700
+Processing by SorterController#sort as HTML
+  Rendered sorter/sort.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-14 16:30:49 -0700
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sorter.css?body=1" for 127.0.0.1 at 2013-04-14 16:30:49 -0700
+Served asset /sorter.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-14 16:30:49 -0700
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-14 16:30:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sorter.js?body=1" for 127.0.0.1 at 2013-04-14 16:30:49 -0700
+Served asset /sorter.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-14 16:30:49 -0700
+Served asset /application.js - 304 Not Modified (1ms)
