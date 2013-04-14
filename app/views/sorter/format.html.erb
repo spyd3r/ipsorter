@@ -1,0 +1,23 @@
+<%= button_to "Home", root_path %>
+<%= form_tag( :action => "format") %>
+<% if @result.nil? == true %>
+  <%= text_area_tag(:message, "Enter IPs to format as CSV here...", :size => "100x25", :id => "src", :name => "source" ) %>
+<% else %>
+  <%= text_area_tag(:message, "#{@match.join(", ")}", :size => "100x25", :id => "src", :name => "source" ) %>
+<% end %>
+<br>
+<br>
+<%= submit_tag("Format as CSV") %>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+		$text = $("#src").text();
+		if ($text == "Enter IPs to format as CSV here...")
+			{
+					$("#src").click(function(){
+					$("#src").text("");
+				});
+			}
+	});
+</script>

@@ -1,0 +1,27 @@
+<%= button_to "Home", root_path %>
+<%= form_tag( :action => "sort") %>
+<% if @result.nil? == true %>
+  <%= text_area_tag(:message, "Enter text to parse for IPs here...", :size => "100x25", :id => "src", :name => "source" ) %>
+<% else %>
+	<% if @btn_type == "Parse IP Addresses" %>
+  		<%= text_area_tag(:message, "#{@match.join("\n")}", :size => "100x25", :id => "src", :name => "source" ) %>
+	<% else %>
+		<%= text_area_tag(:message, "#{@match.uniq.join("\n")}", :size => "100x25", :id => "src", :name => "source" ) %>
+	<% end %>
+<% end %>
+<br />
+<br />
+<%= submit_tag("Parse IP Addresses") %> <%= submit_tag("Parse Unique IP Addresses") %>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+		$text = $("#src").text();
+		if ($text == "Enter text to parse for IPs here...")
+			{
+					$("#src").click(function(){
+					$("#src").text("");
+				});
+			}
+	});
+</script>

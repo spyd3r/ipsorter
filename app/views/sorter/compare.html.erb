@@ -1,0 +1,40 @@
+<%= button_to "Home", root_path%>
+<%= form_tag( :action => "compare") %>
+<% if @result1.nil? == true %>
+  <%= text_area_tag(:message, "Dataset #1", :size => "100x10", :id => "src1", :name => "source1" ) %>
+<% else %>
+  <%= text_area_tag(:message, "#{@match1.join("\n")}", :size => "100x10", :id => "src1", :name => "source1" ) %>
+<% end %>
+<br />
+<% if @result2.nil? == true %>
+  <%= text_area_tag(:message, "Dataset #2", :size => "100x10", :id => "src2", :name => "source2" ) %>
+<% else %>
+  <%= text_area_tag(:message, "#{@match2.join("\n")}", :size => "100x10", :id => "src2", :name => "source2" ) %>
+<% end %>
+<br />
+Results:
+<br>
+<%= text_area_tag(:message, "#{@comp_res.uniq.join("\n")}", :size => "100x10", :id => "res", :name => "results" ) %>
+<br />
+<br />
+<%= submit_tag("Compare IP sets") %>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+		$text1 = $("#src1").text();
+		if ($text1 == "Dataset #1")
+			{
+					$("#src1").click(function(){
+					$("#src1").text("");
+				});
+			}
+			$text2 = $("#src2").text();
+		if ($text2 == "Dataset #2")
+			{
+					$("#src2").click(function(){
+					$("#src2").text("");
+				});
+			}
+	});
+</script>
