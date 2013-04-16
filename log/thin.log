@@ -129,3 +129,8 @@
 	from /home/scott/.rvm/gems/ruby-2.0.0-p0/bin/thin:19:in `<main>'
 	from /home/scott/.rvm/gems/ruby-2.0.0-p0/bin/ruby_noexec_wrapper:14:in `eval'
 	from /home/scott/.rvm/gems/ruby-2.0.0-p0/bin/ruby_noexec_wrapper:14:in `<main>'
+>> Writing PID to tmp/pids/thin.pid
+>> Using rack adapter
+>> Thin web server (v1.5.1 codename Straight Razor)
+>> Maximum connections set to 1024
+>> Listening on 0.0.0.0:3000, CTRL+C to stop
