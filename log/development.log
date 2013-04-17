@@ -15253,3 +15253,73 @@ ActionView::Template::Error (/opt/rails/ipsorter/app/views/sorter/sort.html.erb:
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 10.21.1.123 at 2013-04-17 12:03:59 -0600
+Processing by SorterController#index as HTML
+  Rendered sorter/index.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 583ms (Views: 570.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.21.1.123 at 2013-04-17 12:04:00 -0600
+Processing by SorterController#index as HTML
+  Rendered sorter/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 190ms (Views: 176.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.21.1.123 at 2013-04-17 12:04:01 -0600
+Processing by SorterController#index as HTML
+  Rendered sorter/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 130ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.21.1.123 at 2013-04-17 12:04:33 -0600
+Processing by SorterController#index as HTML
+  Rendered sorter/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 211ms (Views: 193.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.21.1.123 at 2013-04-17 12:04:33 -0600
+Served asset /application.css - 200 OK (36ms)
+
+
+Started GET "/assets/sorter.css?body=1" for 10.21.1.123 at 2013-04-17 12:04:33 -0600
+Served asset /sorter.css - 200 OK (28ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 10.21.1.123 at 2013-04-17 12:04:34 -0600
+Served asset /jquery.js - 200 OK (491ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.21.1.123 at 2013-04-17 12:04:34 -0600
+Served asset /jquery_ujs.js - 200 OK (31ms)
+
+
+Started GET "/assets/sorter.js?body=1" for 10.21.1.123 at 2013-04-17 12:04:34 -0600
+Served asset /sorter.js - 200 OK (55ms)
+
+
+Started GET "/assets/application.js?body=1" for 10.21.1.123 at 2013-04-17 12:04:34 -0600
+Served asset /application.js - 200 OK (95ms)
+
+
+Started GET "/sorter/sort" for 10.21.1.123 at 2013-04-17 12:04:40 -0600
+Processing by SorterController#sort as HTML
+  Rendered sorter/sort.html.erb within layouts/application (45.7ms)
+Completed 500 Internal Server Error in 63ms
+
+ActionView::Template::Error (undefined method `length' for nil:NilClass):
+    10: 	<% end %>
+    11: <% end %>
+    12: <br />
+    13: <%= @match.length %>
+    14: <br />
+    15: <br />
+    16: <%= submit_tag("Parse IP Addresses") %> <%= submit_tag("Parse Unique IP Addresses") %>
+  app/views/sorter/sort.html.erb:13:in `_app_views_sorter_sort_html_erb__225733505175551470_32379180'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (15.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.0.0-p0/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (142.8ms)

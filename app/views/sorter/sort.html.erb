@@ -10,7 +10,9 @@
 	<% end %>
 <% end %>
 <br />
-<%= @match.length %>
+<% if @match.nil? == false %>
+  <%= @match.length %>
+<% end %>
 <br />
 <br />
 <%= submit_tag("Parse IP Addresses") %> <%= submit_tag("Parse Unique IP Addresses") %>
